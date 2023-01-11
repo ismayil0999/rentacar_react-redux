@@ -1,0 +1,91 @@
+body {
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background:rgb(226, 223, 223);
+  padding:0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+html{
+  overflow-x: hidden;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+.color{
+  width:15px;
+  height:5px;
+  border: 1px solid black;
+}
+.color-box{
+  display: flex;
+  gap:10px;
+  justify-content: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+.col{
+  display:flex;
+  flex-wrap: wrap;
+  gap:10px;
+}
+.slider{
+  display:flex !important;
+  justify-content: center;
+  width:100%;
+  height:400px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position:relative;
+}
+.slider div{
+  width:100%;
+  height:120%;
+  display:flex !important;
+  justify-content:left;
+  align-items:flex-start;
+  padding-top: 20px;
+
+}
+.slider div img{
+  width:400px;
+  height:20%;
+}
+@media screen and (max-width:431px){
+  .slider div img{
+    width:200px;
+    height:10%;
+  }
+}
+.homeslide{
+position: relative;
+height:400px;
+}
+.banner{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.199);
+}
+@media screen and (max-width:431px){
+ .homeslide{
+   height:200px;
+ }
+ .slider{
+  height:200px;
+}
+.slider div{
+  height:140%;
+  padding-top:10px;
+}
+}
